@@ -36,25 +36,36 @@ public class AddMovieSceneController {
 
     @FXML
     public void onAddMovieButtonClick(ActionEvent event)  {
+
         String[] strings = new String[9];
+        AdderUtil au = new AdderUtil();
 
 
-        strings[0]=""+nameBox.getText();
+        try {
+            strings[0] = "" + nameBox.getText();
 
-        strings[1]=""+releaseBox.getText();
-        strings[2]=""+genreBox1.getText();
-        strings[3]=""+genreBox2.getText();
-        strings[4]=""+genreBox3.getText();
-        strings[5]=""+runTimeBox.getText();
-        strings[6]=""+pCompany;
-        strings[7]=""+budgetBox.getText();
-        strings[8]=""+revenueBox.getText();
+            strings[1] = "" + releaseBox.getText();
+            strings[2] = "" + genreBox1.getText();
+            strings[3] = "" + genreBox2.getText();
+            strings[4] = "" + genreBox3.getText();
+            strings[5] = "" + runTimeBox.getText();
+            strings[6] = "" + pCompany;
+            strings[7] = "" + budgetBox.getText();
+            strings[8] = "" + revenueBox.getText();
 
-        Movie m=new Movie(strings);
+            Movie m = new Movie(strings);
+            au.setData(m);
+            au.setProdCompany(this.pCompany);
 
-        AdderUtil au=new AdderUtil();
-        au.setData(m);
-        au.setProdCompany(this.pCompany);
+
+        }
+        catch (Exception e)
+        {
+            main.showAlert3();
+        }
+
+
+
 
         try {
             main.getNetworkUtil().write(au);

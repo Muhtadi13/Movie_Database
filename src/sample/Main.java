@@ -72,6 +72,13 @@ public class Main extends Application {
         alert.setContentText("This Company Has No Such Movie With The Following Criteria");
         alert.showAndWait();
     }
+    public void showAlert3() {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Input Exception");
+        alert.setHeaderText("Can Not Add Movie");
+        alert.setContentText("Change Input Format");
+        alert.showAndWait();
+    }
 
 
     public void showTransferScene(List<Movie> pcmovielist) throws IOException {
