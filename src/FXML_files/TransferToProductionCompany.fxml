@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="213.0" prefWidth="518.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TransferToProductionCompanyController">
+   <children>
+      <HBox layoutX="44.0" layoutY="3.0" prefHeight="64.0" prefWidth="474.0" AnchorPane.bottomAnchor="149.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="62.0" prefWidth="516.0" text="Transfer To" textFill="WHITE">
+               <font>
+                  <Font name="Ravie" size="24.0" />
+               </font></Label>
+         </children></HBox>
+      <HBox layoutX="44.0" layoutY="65.0" prefHeight="70.0" prefWidth="474.0" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+         <children>
+            <TextField fx:id="transferText" prefHeight="70.0" prefWidth="435.0" promptText="Company Name">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font></TextField>
+         </children></HBox>
+      <Button fx:id="returnButton" layoutX="33.0" layoutY="167.0" mnemonicParsing="false" onAction="#onReturnButtonClick" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: null;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+      <Button fx:id="confirmButton" layoutX="378.0" layoutY="167.0" mnemonicParsing="false" onAction="#onConfirmButtonClick" style="-fx-background-color: null;" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

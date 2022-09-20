@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="myAnPane" prefHeight="518.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RawCode.TableSceneController">
+   <children>
+      <Button layoutX="14.0" layoutY="466.0" mnemonicParsing="false" text="Button" />
+      <ScrollPane layoutX="81.0" layoutY="7.0" prefHeight="508.0" prefWidth="709.0">
+         <content>
+            <TableView fx:id="mytable" prefHeight="498.0" prefWidth="709.0">
+              <columns>
+                <TableColumn fx:id="title" prefWidth="116.19997864961624" text="titlename" />
+                <TableColumn fx:id="year" prefWidth="95.39999389648438" text="Release Year" />
+                  <TableColumn fx:id="genre" prefWidth="75.0" text="genre" />
+                  <TableColumn fx:id="runtime" prefWidth="102.199951171875" text="running time" />
+                  <TableColumn fx:id="pc" prefWidth="84.79998779296875" text="pr company" />
+                  <TableColumn fx:id="budget" prefWidth="69.0" text="budget" />
+                  <TableColumn fx:id="revenue" prefWidth="80.39996337890625" text="revenue" />
+              </columns>
+            </TableView>
+         </content></ScrollPane>
+   </children>
+</AnchorPane>

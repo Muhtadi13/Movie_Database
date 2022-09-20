@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Apane" prefHeight="350.0" prefWidth="600.0" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <ImageView fx:id="image" fitHeight="362.0" fitWidth="622.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="-11.0" AnchorPane.rightAnchor="-11.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="userNameLabel" alignment="TOP_LEFT" contentDisplay="TOP" layoutX="368.0" layoutY="53.0" prefHeight="31.0" prefWidth="175.0" stylesheets="@Login.css" text="Username" textOverrun="CLIP">
+         <font>
+            <Font name="Vivaldi Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" layoutX="368.0" layoutY="125.0" prefHeight="31.0" prefWidth="175.0" text="Password">
+         <font>
+            <Font name="Vivaldi Italic" size="22.0" />
+         </font></Label>
+      <TextField fx:id="userText" layoutX="361.0" layoutY="85.0" prefHeight="39.0" prefWidth="215.0" promptText="Production Company" stylesheets="@Login.css">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordText" layoutX="361.0" layoutY="156.0" prefHeight="39.0" prefWidth="215.0" promptText="Password" stylesheets="@Login.css">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="loginButton" contentDisplay="CENTER" defaultButton="true" layoutX="361.0" layoutY="239.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="30.0" prefWidth="215.0" style="-fx-background-radius: 15; -fx-background-color: green;" text="Login">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font></Button>
+    <Button fx:id="resetButton" defaultButton="true" layoutX="361.0" layoutY="274.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="30.0" prefWidth="215.0" style="-fx-background-radius: 15; -fx-background-color: green;" text="Reset" wrapText="true">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font></Button>
+      <Button fx:id="exitButton" defaultButton="true" layoutX="361.0" layoutY="309.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="30.0" prefWidth="215.0" style="-fx-background-radius: 15; -fx-background-color: green;" text="Exit" textFill="WHITE" wrapText="true">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

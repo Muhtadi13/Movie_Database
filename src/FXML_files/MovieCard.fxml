@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="548.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MovieCardController">
+    <children>
+      <ImageView fx:id="imageView" fitHeight="563.0" fitWidth="1053.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+        <VBox layoutX="6.0" layoutY="-1.0" prefHeight="562.0" prefWidth="616.0">
+            <children>
+                <VBox prefHeight="307.0" prefWidth="541.0">
+                    <children>
+                        <HBox prefHeight="246.0" prefWidth="616.0">
+                            <children>
+                                <Label fx:id="movieName" prefHeight="201.0" prefWidth="616.0" text="mName" textFill="WHITE" wrapText="true">
+                                    <font>
+                                        <Font name="Rockwell Bold" size="28.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                                </Label>
+                            </children>
+                        </HBox>
+                  <HBox prefHeight="98.0" prefWidth="600.0">
+                     <children>
+                        <VBox prefHeight="62.0" prefWidth="0.0" />
+                        <VBox prefHeight="62.0" prefWidth="161.0">
+                           <children>
+                              <Button fx:id="trailerButton" mnemonicParsing="false" onAction="#onTrailerButtonClick" prefHeight="48.0" prefWidth="183.0" style="-fx-background-color: null;" text="Watch Trailer" textFill="RED">
+                                 <effect>
+                                    <DropShadow spread="0.9" />
+                                 </effect>
+                                 <font>
+                                    <Font name="Rockwell" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children></VBox>
+                     </children>
+                  </HBox>
+                        <HBox prefHeight="72.0" prefWidth="547.0" style="-fx-background-color: null;">
+                     <children>
+                        <HBox prefHeight="41.0" prefWidth="209.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="169.0" text="Genres" textFill="WHITE">
+                                 <font>
+                                    <Font name="Rockwell" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow spread="1.0" />
+                                 </effect>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="41.0" prefWidth="364.0">
+                           <children>
+                              <Label fx:id="genreName" prefHeight="41.0" prefWidth="366.0" text="genre" textFill="WHITE">
+                                 <font>
+                                    <Font name="Rockwell" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow blurType="ONE_PASS_BOX" height="46.73" radius="19.3575" spread="1.0" width="32.7" />
+                                 </effect>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER_LEFT" prefHeight="88.0" prefWidth="547.0" style="-fx-background-color: transparent;">
+                    <children>
+                  <HBox prefHeight="50.0" prefWidth="536.0">
+                     <children>
+                        <Label prefHeight="47.0" prefWidth="215.0" text="Production Company" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                        </Label>
+                        <Label fx:id="prodCompany" prefHeight="47.0" prefWidth="368.0" text="Company" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                        </Label>
+                     </children>
+                  </HBox>
+                        <HBox prefHeight="42.0" prefWidth="547.0" style="-fx-background-color: null;">
+                     <children>
+                                <Label prefHeight="39.0" prefWidth="396.0" text="Release Year" textFill="WHITE">
+                                    <font>
+                                        <Font name="Rockwell" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                                </Label>
+                                <Label fx:id="releaseYear" prefHeight="39.0" prefWidth="591.0" text="released" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="Rockwell Bold" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                                </Label>
+                     </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="97.0" prefWidth="547.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label prefHeight="39.0" prefWidth="315.0" text="Revenue ($)" textFill="WHITE">
+                                    <font>
+                                        <Font name="Rockwell" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                                </Label>
+                                <Label fx:id="revenue" prefHeight="39.0" prefWidth="513.0" text="revenue" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="Rockwell Bold" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="97.0" prefWidth="635.0" style="-fx-background-color: null;">
+                     <children>
+                                <Label prefHeight="42.0" prefWidth="393.0" style="-fx-text-fill: White;" text="Budget ($)" textFill="WHITE">
+                                    <font>
+                                        <Font name="Rockwell" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                                </Label>
+                                <Label fx:id="budget" prefHeight="39.0" prefWidth="590.0" style="-fx-text-fill: #ffffff;" text="budget" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+                                    <font>
+                                        <Font name="Rockwell Bold" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                           <effect>
+                              <DropShadow spread="1.0" />
+                           </effect>
+                                </Label>
+                     </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="78.0" prefWidth="635.0">
+                    <children>
+                        <HBox prefHeight="49.0" prefWidth="669.0" style="-fx-background-color: null;">
+                     <children>
+                        <HBox prefHeight="50.0" prefWidth="616.0">
+                           <children>
+                                      <Label prefHeight="42.0" prefWidth="440.0" style="-fx-text-fill: White;" text="Running Time(min)" textFill="WHITE">
+                                          <font>
+                                              <Font name="Rockwell" size="18.0" />
+                                          </font>
+                                          <padding>
+                                              <Insets left="5.0" />
+                                          </padding>
+                                 <effect>
+                                    <DropShadow spread="1.0" />
+                                 </effect>
+                                      </Label>
+                                      <Label fx:id="runTime" prefHeight="39.0" prefWidth="641.0" style="-fx-text-fill: white;" text="runtime" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+                                          <font>
+                                              <Font name="Rockwell Bold" size="18.0" />
+                                          </font>
+                                          <padding>
+                                              <Insets left="5.0" />
+                                          </padding>
+                                 <effect>
+                                    <DropShadow spread="1.0" />
+                                 </effect>
+                                      </Label>
+                           </children></HBox>
+                     </children></HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+      <Button fx:id="closeButton" layoutX="861.0" layoutY="483.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="50.0" prefWidth="134.0" style="-fx-background-radius: 20; -fx-background-color: null;" text="close" textFill="WHITE">
+         <effect>
+            <DropShadow spread="1.0" />
+         </effect>
+         <font>
+            <Font name="Ravie" size="26.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

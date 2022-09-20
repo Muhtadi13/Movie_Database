@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.jfoenix.controls.JFXButton?>-->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="moviePane" alignment="CENTER" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="701.0" style="-fx-background-radius: 20 20 20 20; -fx-background-color: Black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MinMovieDetailController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="63.0" prefWidth="702.0" style="-fx-background-radius: 20 20 20 20;">
+            <children>
+                <VBox alignment="CENTER" prefHeight="81.0" prefWidth="122.0">
+                    <children>
+                        <ImageView fx:id="imView" fitHeight="72.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                        </ImageView>
+                    </children>
+                </VBox>
+                <VBox prefHeight="81.0" prefWidth="366.0">
+                    <children>
+                        <Label fx:id="movieName" alignment="CENTER" prefHeight="72.0" prefWidth="372.0" text="Label" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                            <font>
+                                <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            <VBox prefHeight="77.0" prefWidth="174.0">
+               <children>
+                  <HBox prefHeight="61.0" prefWidth="198.0">
+                     <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" onAction="#showMovieDetails" prefHeight="36.0" prefWidth="169.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: #2f3542;" text="Details" textAlignment="CENTER" textFill="#f1f2f6" wrapText="true">
+                                  <font>
+                                                  <Font name="Book Antiqua Bold" size="18.0" />
+                                  </font>
+                              </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="8.0" prefWidth="198.0">
+                     <children>
+                              <Button fx:id="transferButton" alignment="CENTER" contentDisplay="CENTER" onAction="#DoTransferAction" prefHeight="15.0" prefWidth="168.0" style="-fx-background-radius: 10 10 10 10; -fx-background-color: #2f3542;" text="Transfer Movie" textAlignment="CENTER" textFill="#f1f2f6" wrapText="true">
+                                  <font>
+                                      <Font name="Book Antiqua Bold" size="18.0" />
+                                  </font>
+                              </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

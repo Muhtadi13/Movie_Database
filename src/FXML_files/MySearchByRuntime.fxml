@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="188.0" prefWidth="563.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MySearchByRuntimeController">
+   <children>
+      <Label layoutX="67.0" layoutY="29.0" prefHeight="54.0" prefWidth="468.0" text="Enter Running Time Range in Minutes" textFill="WHITE">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="minTextBox" layoutX="143.0" layoutY="83.0" prefHeight="38.0" prefWidth="138.0">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="maxTextBox" layoutX="363.0" layoutY="81.0" prefHeight="38.0" prefWidth="138.0">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font></TextField>
+      <Label layoutX="64.0" layoutY="82.0" prefHeight="38.0" prefWidth="58.0" text="Min" textFill="WHITE">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="85.0" prefHeight="30.0" prefWidth="58.0" text="Max" textFill="WHITE">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchButton" layoutX="407.0" layoutY="140.0" mnemonicParsing="false" onAction="#onSearchButtonClick" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: null;" text="Search" textFill="#fffcfc">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnButton" layoutX="45.0" layoutY="140.0" mnemonicParsing="false" onAction="#onReturnButtonClick" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: null;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

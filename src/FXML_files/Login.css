@@ -1,0 +1,48 @@
+.title {
+    -fx-font-family: Impact;
+    -fx-font-size: 34pt;
+    -fx-text-fill: #e6e6e6;
+}
+
+#Apane{
+    -fx-background-color: Black;
+}
+
+
+
+
+#userNameLabel {
+    -fx-font-family: Rockwell;
+    -fx-font-color : Black;
+    -fx-font-size :20 pt;
+}
+
+#passwordLabel {
+    -fx-font-family: Rockwell;
+    -fx-font-color : Black;
+    -fx-font-size :20 pt;
+}
+
+
+
+#userText{
+    -fx-background-color: #333333;
+     -fx-text-fill: white;
+      -fx-background-radius: 10;
+}
+
+#passwordText {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+#loginButton {
+    -fx-background-color: #00802b;
+    -fx-text-fill: white;
+}
+
+#resetButton {
+    -fx-background-color: #00802b;
+    -fx-text-fill: white;
+}

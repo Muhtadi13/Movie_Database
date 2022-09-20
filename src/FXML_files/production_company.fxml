@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnPane" fx:id="myAnPane" prefHeight="518.0" prefWidth="794.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProdComController">
+   <children>
+      <ImageView fx:id="image" fitHeight="260.0" fitWidth="270.0" layoutX="436.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="117.0" AnchorPane.leftAnchor="436.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="141.0" />
+      <Button layoutX="42.0" layoutY="397.0" mnemonicParsing="false" onAction="#switchToHello" prefHeight="34.0" prefWidth="306.0" text="Log Out">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+      <Button fx:id="addbutton" layoutX="42.0" layoutY="339.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="31.0" prefWidth="306.0" text="Add Movie">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+      <Button fx:id="listbutton" layoutX="42.0" layoutY="85.0" mnemonicParsing="false" onAction="#onListButtonClick" prefHeight="34.0" prefWidth="306.0" style="-fx-background-color: White;" text="All Movies">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+      <Label fx:id="message" alignment="CENTER" layoutX="4.0" layoutY="16.0" prefHeight="50.0" prefWidth="774.0" text="Production Company" textFill="WHITE">
+         <font>
+            <Font name="Ravie" size="25.0" />
+         </font></Label>
+      <Button fx:id="recent" layoutX="42.0" layoutY="157.0" mnemonicParsing="false" onAction="#onRecentButtonClick" prefHeight="31.0" prefWidth="306.0" text="Most Recent Movies">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+      <Button fx:id="maxrevenue" layoutX="42.0" layoutY="220.0" mnemonicParsing="false" onAction="#onMaxRevenueClick" prefHeight="31.0" prefWidth="306.0" text="Maximum Revenue Movies">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+      <Button fx:id="profitButton" layoutX="42.0" layoutY="283.0" mnemonicParsing="false" onAction="#onProfitButtonClick" prefHeight="31.0" prefWidth="306.0" text="Total Profit">
+         <font>
+            <Font name="Ravie" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
